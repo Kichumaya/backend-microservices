@@ -51,15 +51,15 @@ npm install
 
 ## Start the services in seperate terminal
 
-• Start Gateway Service
+### Start Gateway Service
 cd gateway-service
 node server.js
 
-• Start User Service
+### Start User Service
 cd user-service
 node server.js
 
-• Start Admin Service
+### Start Admin Service
 cd admin-service
 node server.js
 
@@ -71,25 +71,25 @@ Through Gateway (http://localhost:5000)
 
 # User Service
 
-GET /user/ – Health check
-GET /user/orders – Get all orders
-GET /user/orders/:id – Get order by ID
-POST /user/orders – Create new order
-PUT /user/orders/:id – Update order
-DELETE /user/orders/:id – Delete order by ID
-DELETE /user/orders/ – Delete all orders
+• GET /user/ – Health check
+• GET /user/orders – Get all orders
+• GET /user/orders/:id – Get order by ID
+• POST /user/orders – Create new order
+• PUT /user/orders/:id – Update order
+• DELETE /user/orders/:id – Delete order by ID
+• DELETE /user/orders/ – Delete all orders
 
 --------
 
 # Admin Service
 
-GET /admin/ – Health check
-GET /admin/products – Get all products
-GET /admin/products/:id – Get product by ID
-POST /admin/products – Create new product
-PUT /admin/products/:id – Update product
-DELETE /admin/products/:id – Delete product by ID
-DELETE /admin/products/ – Delete all products
+• GET /admin/ – Health check
+• GET /admin/products – Get all products
+• GET /admin/products/:id – Get product by ID
+• POST /admin/products – Create new product
+• PUT /admin/products/:id – Update product
+• DELETE /admin/products/:id – Delete product by ID
+• DELETE /admin/products/ – Delete all products
 
 --------
 
