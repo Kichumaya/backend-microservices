@@ -35,15 +35,15 @@ backend-microservices/
 
 ## Install dependencies for each service
 
-• Gateway Service
+### Gateway Service
 cd gateway-service
 npm install
 
-• User Service
+### User Service
 cd user-service
 npm install
 
-• Admin Service
+### Admin Service
 cd admin-service
 npm install
 
