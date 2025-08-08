@@ -31,34 +31,39 @@ backend-microservices/
 │
 └── README.md
 
+--------
 
 ## Install dependencies for each service
 
-# Gateway Service
+• Gateway Service
 cd gateway-service
 npm install
 
-# User Service
+• User Service
 cd user-service
 npm install
 
-# Admin Service
+• Admin Service
 cd admin-service
 npm install
+
+--------
 
 ## Start the services in seperate terminal
 
-# Start Gateway Service
+• Start Gateway Service
 cd gateway-service
 node server.js
 
-# Start User Service
+• Start User Service
 cd user-service
 node server.js
 
-# Start Admin Service
+• Start Admin Service
 cd admin-service
 node server.js
+
+--------
 
 ## API Gateway
 
@@ -74,6 +79,8 @@ PUT /user/orders/:id – Update order
 DELETE /user/orders/:id – Delete order by ID
 DELETE /user/orders/ – Delete all orders
 
+--------
+
 # Admin Service
 
 GET /admin/ – Health check
@@ -84,6 +91,7 @@ PUT /admin/products/:id – Update product
 DELETE /admin/products/:id – Delete product by ID
 DELETE /admin/products/ – Delete all products
 
+--------
 
 Note: I provided the Postman API collection so you can directly check this by adding in the postman
 
@@ -92,3 +100,4 @@ Note: I provided the Postman API collection so you can directly check this by ad
     User Service: 5001
     Admin Service: 5002
 
+--------
