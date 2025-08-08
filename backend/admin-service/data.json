@@ -1,0 +1,7 @@
+{
+    "products" : [
+        {"id": 1, "name": "Mango", "createdAt": "NA"},
+        {"id": 2, "name": "Apple", "createdAt": "NA"},
+        {"id": 3, "name": "Banana", "createdAt": "NA"}
+    ]
+}

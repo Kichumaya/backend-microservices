@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "0df900df-fa2c-4734-81ba-912e279e613b",
+		"name": "microservice-api-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14024189"
+	},
+	"item": [
+		{
+			"name": "get-user-orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-user-orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\n//     \"userId\": \"1\",\n//     \"items\": [\n//       { \"productId\": \"1\", \"name\": \"Mango\", \"quantity\": 2, \"price\": 10.00 },\n//       { \"productId\": \"2\", \"name\": \"Apple\", \"quantity\": 1, \"price\": 25.00 }\n//     ]\n//   }\n\n{\n    \"userId\": \"2\",\n    \"items\": [\n      { \"productId\": \"1\", \"name\": \"Banana\", \"quantity\": 2, \"price\": 44.00 },\n      { \"productId\": \"2\", \"name\": \"Coconut\", \"quantity\": 1, \"price\": 50.00 }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-user-orders",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/user/orders/ord-1754590443548",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"orders",
+						"ord-1754590443548"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-user-orders",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"id\": \"ord-1754590445606\",\r\n            \"userId\": \"1\",\r\n            \"items\": [\r\n                {\r\n                    \"productId\": \"1\",\r\n                    \"name\": \"Mango\",\r\n                    \"quantity\": 2,\r\n                    \"price\": 10\r\n                },\r\n                {\r\n                    \"productId\": \"2\",\r\n                    \"name\": \"Apple\",\r\n                    \"quantity\": 1,\r\n                    \"price\": 24\r\n                }\r\n            ],\r\n            \"status\": \"placed\",\r\n            \"createdAt\": \"2025-08-07T18:14:05.606Z\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/user/orders/ord-1754590445606",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"orders",
+						"ord-1754590445606"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-admin-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/admin/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-admin-products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Coconut\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-admin-products",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Coconut\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/admin/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"admin",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
